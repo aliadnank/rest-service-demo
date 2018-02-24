@@ -61,6 +61,11 @@ public class StatServiceTest {
        TransactionStats actual =  statsService.reduce();
 
         Assert.assertEquals(expected.getSum(),actual.getSum(),0);
+        Assert.assertEquals(expected.getMax(),actual.getMax(),0);
+        Assert.assertEquals(expected.getMin(),actual.getMin(),0);
+        Assert.assertEquals(expected.getAvg(),actual.getAvg(),0);
+        Assert.assertEquals(expected.getCount(),actual.getCount(),0);
+
 
     }
 
